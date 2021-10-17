@@ -15,8 +15,7 @@
 
   .top-inf-row {
     margin-bottom: 0px;    
-    justify-content: space-between;    
-    align-items: flex-start;
+    justify-content: space-between;        
   }
   .sl-h {
     margin-bottom: 66px;
@@ -204,6 +203,18 @@
   .foot-top {
     padding-top: 23px;
   }
+  .hist-comp-img {
+    width: 450px;
+    height: 721px;
+    object-fit: cover;
+  }
+  .hist-comp {
+    font-size: 18px;
+  } 
+  .gal-ph-cov-col-2 {
+    width: 290px;
+  }
+ 
 }
 
 
@@ -212,6 +223,10 @@
   .contain {
     max-width: 690px 
   } 
+
+  .top-close {
+    display: block;
+  }
 
 
 
@@ -529,6 +544,25 @@ h2 {
 .foot-dw {
   padding-top: 15px;
 }
+.top-inf-row {
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+}
+ .hist-comp-img {
+    width: 100%;
+    height: 520px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .gal-ph-cov-col-2 {
+    width: 210px;
+  }
+  .gal {
+    padding-bottom: 60px;
+  }
+  .cert-2 {
+    padding-top: 42px;
+  }
 } 
 
 /* Small Devices, Tablets */
@@ -666,6 +700,21 @@ h2 {
 .foot-dw {
   padding: 22px 0;
 }
+.hist-comp-img {
+  height: 417px;
+}
+.hist-comp {
+  font-size: 16px;
+}
+.gal-ph-cov-col-1-1 {
+  margin-right: 15px;  
+}
+.gal-ph-cov-col-1-img-w {    
+    height: calc(50% - 7.5px);
+}
+.gal-ph-cov-col-1-2 {
+  margin-left: 15px;
+}
 } 
 
 
@@ -677,6 +726,15 @@ h2 {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .company-page {
+    padding-top: 0;
+  }
+  .bread {
+    margin-bottom: 20px;
+  }
+  .bread-ul {    
+            flex-wrap: wrap;
+  }
 }
 
 
@@ -684,6 +742,51 @@ h2 {
 @media only screen and (max-width : 480px) {
   .our-prod-it-w .our-prod-col {
     width: 100%;
+  }
+  .gal-ph-w-cov-1 {
+            flex-wrap: wrap;
+            width: 100%;
+            margin-bottom: 30px;
+            display: block;
+            height: auto;
+  }  
+  .gal-ph-cov-col-1-2 {
+    margin-left: 0;
+  }
+  .gal-ph-cov-col-1-1 {
+    width: 100%;
+  }
+  .gal-ph-cov-col-2 {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  .gal-ph-cov-col-1 {
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-right: 0;
+    display: block;
+  }
+  .gal-ph-cov-col-1-img-w {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .gal-ph-w {
+    margin-top: 20px;
+  }
+  .hist-comp {
+    padding-bottom: 30px;
+  }
+  .gal {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .cert-2 {
+    padding-top: 30px;
   }
 }
 

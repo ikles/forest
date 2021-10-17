@@ -40,6 +40,20 @@ jQuery(document).ready(function( $ ) {
     baseClass: "myclass"
   });
 
+  $('[data-fancybox="gallery-2"]').fancybox({
+    arrows: true,
+    infobar: false,
+    smallBtn: true,
+    toolbar: false,
+    iframe : {
+      css : {
+        width : '950px'
+      }
+    },    
+    slideClass: "myClass",
+    baseClass: "myclass"
+  });
+
 
   /************************************/
 
