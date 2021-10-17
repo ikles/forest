@@ -2,7 +2,7 @@ jQuery(document).ready(function( $ ) {
 
   $(".toggle-mnu").click(function() {
     $(this).toggleClass("on");
-    $(".top-mnu").slideToggle();
+    $(".top-mnu").fadeToggle();
     return false;
   });
 
@@ -11,6 +11,12 @@ jQuery(document).ready(function( $ ) {
       $(".toggle-mnu").removeClass("on");
       $(".top-mnu").fadeOut();
     }
+  });
+
+
+  $('.top-close').click(function(e) {    
+    $(".toggle-mnu").removeClass("on");
+    $(".top-mnu").fadeOut();
   });
 
 
@@ -37,7 +43,7 @@ jQuery(document).ready(function( $ ) {
 
   /************************************/
 
-$('.wrapper').prepend('<span class="eye-3"></span>');
+/*$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -49,7 +55,7 @@ $('.eye-3').click(function (e) {
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
 
-});
+});*/
 
 /************************************/
 
@@ -182,6 +188,8 @@ $('.accordion-header').toggleClass('inactive-header');
     $('.modal-overlay').fadeOut();
     $('body').removeClass('ohi');
   });
+
+
 
 
 

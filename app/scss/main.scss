@@ -150,6 +150,11 @@ $font2: 'Ubuntu', sans-serif;
     width: 100%;
   }
 
+  .top-mnu li {
+    margin-right: 0;
+  }
+
+
 
   .lcpadding {
     padding-left: calc((100% - 1180px)/2);    
@@ -289,7 +294,9 @@ $font2: 'Ubuntu', sans-serif;
     margin-right: 64px;
   }
 
-
+.top-lng-wrap {
+  margin-left: auto;
+}
 
   .top-lng-w {
     margin-left: auto;
@@ -629,6 +636,9 @@ $font2: 'Ubuntu', sans-serif;
   .cert-w {
   }
 
+.hidden-mnu {
+  display: none;
+}
 
 
   .h2 {
@@ -789,6 +799,7 @@ $font2: 'Ubuntu', sans-serif;
   .map {
     height: 600px;
     width: 100%;
+    overflow: hidden;
   }
 
   .foot {
@@ -910,6 +921,19 @@ $font2: 'Ubuntu', sans-serif;
     margin-left: -630px;
     margin-right: 20px;
   }
+
+.top-close {
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/top-close.svg") $nr 0 0;  
+  top: 69px;
+  right: 39px;
+}
+.top-close-w {
+  position: relative;
+}
 
   @import "_media.scss";
   @import "_hides.scss";
